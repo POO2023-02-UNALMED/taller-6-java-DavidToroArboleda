@@ -20,7 +20,7 @@ public class Pais {
 	
 	//Pais con mas ventas
 	
-	public Pais paisMasVendedor() {
+	public static Pais paisMasVendedor() {
 		
 		Pais paisMasVendedor = null;
 		int maxVendidos = 0;
