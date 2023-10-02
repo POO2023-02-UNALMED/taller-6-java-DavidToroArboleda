@@ -20,7 +20,25 @@ public class Pais {
 	
 	//Pais con mas ventas
 	
+	public Pais paisMasVendedor() {
+		
+		Pais paisMasVendedor = null;
+		int maxVendidos = 0;
+		
+		for (int i = 0;i < Pais.listado.size(); i++) {
+			
+			Pais pais = listado.get(i);
+			int cantidadVendidos = pais.getCantidadVendidos();
+			
+			if ( cantidadVendidos > maxVendidos ) {
+				maxVendidos = cantidadVendidos;
+				paisMasVendedor = pais;
+			}
+		}
+		
+		return paisMasVendedor;
 	
+	}
 	
 	
 	
