@@ -31,6 +31,8 @@ public class Vehiculo {
 		int cantidadVendidosPais = fabricante.getPais().getCantidadVendidos();
 		fabricante.getPais().setCantidadVendidos(cantidadVendidosPais+1);;
 		
+		int cantidadVendidosFabrica = fabricante.getCantidadVendidos();
+		fabricante.setCantidadVendidos(cantidadVendidosFabrica+1);
 		
 	}
 	
